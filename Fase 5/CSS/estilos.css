@@ -1,0 +1,97 @@
+   *{
+    margin: 0%;
+    padding: 0%;
+}
+
+/* Encabezado */
+header{
+    background-color: rgb(4, 15, 51);
+    color: white;
+    font-size: x-large;
+    display: grid;
+    grid-template-columns: 62% 37%;
+    font-style: italic;
+}
+
+/* estilos a la clase navegacion que viene de nav */
+.navegacion{
+    width: auto;
+    margin: 0px;
+    background: rgba(8, 54, 139, 0.486);
+    font-weight: bolder;  
+}
+   
+/* llamar al ul de la clase menu y ul de la clase submenu*/
+.navegacion ul{
+    list-style: none;    
+}
+   
+/* llamar a li de la clase menu*/
+.menu > li{
+    position: relative; /* el menu no se vaya a otra parte*/
+    display: inline-block;  /* el menu se haga al lado del otro*/
+}
+
+/* Estilos a los botones*/
+.menu > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: brown;
+    font-family: 'Arial Narrow';
+    text-decoration: none; /* no colocar subrayado*/
+}
+   
+/* hover= efectos al pasar el mouse por los botones*/
+.menu li a:hover{
+    background-color: rgb(122, 182, 218);
+    color: rgb(3, 10, 75);
+    transition: all .3s;
+}
+   
+/* Estilos del submenu */
+.submenu{
+    position: absolute; /* para acomodar el submenu debajo de cada boton */
+    background-color: rgb(122, 182, 218);
+    width: 120%;
+    display: none; /* al pasar el mouse por el boton me muestre submenu */ 
+}
+   
+/* Estilos a los botones del submenu*/
+.submenu li a{
+    display: block;
+    padding: 15px;
+    color: brown;
+    font-family: 'Arial Narrow';
+    text-decoration:none; /* no colocar subrayado*/
+}
+   
+/* hover= efectos al pasar el mouse por los botones */
+.menu li:hover .submenu{
+    display: block;
+}
+   
+/* seccion divida en 2, art y aside*/
+.contenedor{
+    display: grid;
+    grid-template-columns: 74% 26%;
+}
+
+/* info articulos */
+section{
+    background-color: rgb(226, 232, 238);
+    padding: 10px;
+    font-size: large;
+    text-align: justify;
+}
+
+/* donde esta el fan page */
+aside{
+    background-color:rgb(218, 214, 214);
+}
+
+/* pie de pagina */
+footer{
+    background-color: rgb(4, 15, 51);
+    color: white;
+    padding: 10px;
+}
